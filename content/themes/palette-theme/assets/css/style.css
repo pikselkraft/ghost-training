@@ -1,0 +1,163 @@
+/**************
+# CONFIGURATION
+**************/
+
+/***********
+# Style tile
+
+COLORS
+------
+Bordeau:     #664147;
+Light Brown: #9C8D8A;
+Light green: #E5F9E0;
+Green:       #40C9A2;
+
+FONTS
+-----
+Header
+Font-Family: Courgette, Font-Weight: regular, Font-Size: 36, Color: #664147
+
+Subheader
+Font-Family: Courgette , Font-Weight: regular, Font-Size: 21, Color: #664147
+
+Text
+Font-Family: Lato, Font-Weight: regular, Font-Size: 14, Line-Height: 23, Color: #9C8D8A
+
+Link
+Font-Family: Lato, Font-Weight: regular, Font-Size: 14, Color: #40C9A2
+************/
+
+/********
+GLOBAL
+********/
+
+@font-face {
+  font-family: 'Courgette';
+  src: url('/assets/fonts/courgette-regular-webfont.eot');
+  src: url('/assets/fonts/courgette-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/courgette-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/courgette-regular-webfont.woff') format('woff'),
+    url('/assets/fonts/courgette-regular-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/lato-regular-webfont.eot');
+  src: url('/assets/fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/lato-regular-webfont.woff') format('woff'),
+    url('/assets/fonts/lato-regular-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    font-family: "Lato", Arial, Georgia, Garamond, serif;
+
+}
+
+h1 {
+    font-family: "Courgette";
+    color: #664147;
+}
+
+h1 a {
+    color: #664147;
+}
+
+h2, h3, h4 {
+    font-family: "Courgette";
+    color: #664147;
+}
+
+p {
+    color: #9C8D8A;
+}
+
+a {
+    color: #40C9A2;
+}
+
+/********
+HEADER
+********/
+
+.banner {
+    border-bottom: 0.1rem solid #664147;
+}
+
+.banner-navigation {
+    position: relative;
+    top: 5rem;
+}
+
+/* TODO update logo (right size) and add hidden title for seo purpose  !! */
+.logo img {
+    position: relative;
+    left: 8rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.blogtitle {
+  display: none;
+}
+
+.blogtitle-description {
+    display: none;
+}
+
+/* TODO responsive menu + icon responsive (MENU) */
+
+nav li {
+    display: inline-block;
+    margin: 1rem 1rem 1rem 1rem;
+    color: red;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* TODO style of the menu */
+
+/********
+CONTENT
+********/
+
+main {
+
+}
+
+/********
+TEAM
+********/
+
+/********
+PRODUCTS
+********/
+
+/********
+FOOTER
+********/
+
+.footer--container {
+    height: 6rem;
+    background-color: #9C8D8A;
+}
+
+.footer--sub {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+}

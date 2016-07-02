@@ -1,0 +1,40 @@
+{{!< default}}
+{{> header}}
+<main>
+  <div class="fx-row fx-row-center-l">
+    <div class="fx-col-80-l">
+    {{#get "posts" limit="3" include="author,tags"}}
+    {{#foreach posts}}
+        <article class="post {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
+            <header class="post--header">
+                <time class="podt--date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+                <h1 class="post--title" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+            </header>
+        <div class="post--content" itemprop="articleBody">
+            {{#if image}}
+                <img src="{{image}}" alt="{{title}}">
+            {{/if}}
+            <p class="author">Written by {{author}}</p>
+            {{content}}
+        </div>
+        {{#if tags}}
+            <div class="tags">
+            Tags: {{tags separator=" | "}}
+            </div>
+        {{/if}}
+        </article>
+    {{/foreach}}
+    <div class="fx-row fx-row-center-l">
+      <div class="fx-col-80-l">
+            {{#if pagination}}
+                <div class="pagination">
+                {{{pagination}}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+    {{/get}}
+    </div>
+</div>
+</main>
+{{> footer}}

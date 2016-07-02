@@ -1,0 +1,17 @@
+{{!< default}}
+{{> header}}
+<main>
+<div class="fx-row fx-row-center-l">
+    <div class="fx-col-80-l">
+    {{#post}}
+    <article class="mentions {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
+        <header class="mentions--header">
+            <h1 class="mentions--title" itemprop="headline">{{title}}</h1>
+        </header>
+    <div class="mentions--content" itemprop="articleBody">
+        {{content}}
+    </div>
+    </article>
+  {{/post}}
+</main>
+{{> footer}}

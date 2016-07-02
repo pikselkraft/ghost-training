@@ -1,0 +1,18 @@
+<header role='banner'>
+    <div class="banner fx-row">
+        <div class="fx-col-30-l banner-logo">
+            {{#if @blog.logo}}
+                <a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+            {{/if}}
+            <h1 class="blogtitle">
+                <a title="{{@blog.title}}" href='{{@blog.url}}'>
+                    {{{@blog.title}}}
+                </a>
+            </h1>
+            <p class="blogtitle-description"><a title="{{@blog.title}}" href='{{@blog.url}}'>{{@blog.description}}</a></p>
+        </div>
+        <div class="fx-col-70-l banner-navigation">
+            <nav>{{navigation}}</nav>
+        </div>
+    </div>
+</header>

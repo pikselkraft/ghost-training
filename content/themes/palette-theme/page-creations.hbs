@@ -1,0 +1,17 @@
+{{!< default}}
+{{> header}}
+<main>
+<div class="fx-row fx-row-center-l">
+    <div class="fx-col-80-l">
+    {{#post}}
+    <article class="creations {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
+        <header class="creations--header">
+            <h1 class="creations--title" itemprop="headline">{{title}}</h1>
+        </header>
+    <div class="creations--content" itemprop="articleBody">
+        {{content}}
+    </div>
+    </article>
+  {{/post}}
+</main>
+{{> footer}}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  {{! Document Settings }}
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  {{! Styles }}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/fox.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+  {{!-- <link rel="stylesheet" type="text/css" href="{{asset "css/pesticide.css"}}" /> --}}
+  {{! Scripts }}
+  <script type=’text/javascript’ src=’{{asset "js/all.min.js"}}’></script>
+  {{! Assets Icons }}
+  <link rel="icon" href="{{asset "/favicon.ico"}}" />
+
+  {{! Responsive Meta Tags }}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+<div class="wrapper">
+{{{body}}}
+</div>
+
+{{ghost_foot}}
+</body>
+</html>
