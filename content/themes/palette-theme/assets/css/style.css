@@ -88,12 +88,12 @@ a {
 HEADER
 ********/
 
-.banner-logo {
+.banner--logo {
     display: block;
     margin: 1rem auto 0rem auto;
 }
 
-.banner-navigation {
+.banner--navigation {
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ HEADER
   display: none;
 }
 
-.blogtitle-description {
+.blogtitle--description {
     display: none;
 }
 
