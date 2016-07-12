@@ -191,3 +191,30 @@ FOOTER
     top: 1rem;
     text-align: center;
 }
+
+.social {
+    text-align: center;
+}
+
+.social--glyph {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.social--icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: #40C9A2;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+========================================== */
