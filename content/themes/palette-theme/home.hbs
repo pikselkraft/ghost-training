@@ -1,6 +1,6 @@
 {{!< default}}
 {{> header}}
-<main>
+<main class="home">
   <div class="fx-row fx-row-center-l">
     <div class="fx-col-80-l">
         {{#foreach posts}}
@@ -8,8 +8,7 @@
             {{#has tag="home"}}
             <article class="home {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
             <header class="home--postheader">
-                <time class="home--date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
-                <h1 class="home--posttitle" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+                <h1 class="home--posttitle" itemprop="headline">{{title}}</h1>
             </header>
             <div class="home--postcontent" itemprop="articleBody">
             {{#if image}}

@@ -8,7 +8,7 @@
 COLORS
 ------
 Bordeau:     #664147;
-Light Brown: #9C8D8A;
+Light brown: #9C8D8A;
 Light green: #E5F9E0;
 Green:       #40C9A2;
 
@@ -80,23 +80,26 @@ a {
     color: #40C9A2;
 }
 
+.back-bordeau {
+    background-color: #664147;
+}
+
 /********
 HEADER
 ********/
 
-.banner {
-    border-bottom: 0.1rem solid #664147;
+.banner-logo {
+    display: block;
+    margin: 1rem auto 0rem auto;
 }
 
 .banner-navigation {
-    position: relative;
-    top: 5rem;
+    text-align: center;
 }
 
 /* TODO update logo (right size) and add hidden title for seo purpose  !! */
 .logo img {
     position: relative;
-    left: 8rem;
     width: 10rem;
     height: 10rem;
 }
@@ -113,24 +116,51 @@ HEADER
 
 nav li {
     display: inline-block;
-    margin: 1rem 1rem 1rem 1rem;
-    color: red;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 nav a {
+    font-family: "Courgette";
+    color: white;
     text-decoration: none;
 }
 
 nav a:active {
+    color: #9C8D8A;
     text-decoration: underline;
 }
 
 nav a:hover {
+    color: #40C9A2;
     text-decoration: underline;
 }
 
 /* TODO style of the menu */
 
+/********
+HOME
+********/
+.home {
+    margin: 2rem 0 0 0;
+}
+
+.home--posttitle {
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.moto {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.moto li {
+    display: inline-block;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem;
+    border: 2px solid #664147;
+    border-radius: 10px;
+}
 /********
 CONTENT
 ********/

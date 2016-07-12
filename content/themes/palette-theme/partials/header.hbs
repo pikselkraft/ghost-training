@@ -1,6 +1,6 @@
 <header role='banner'>
     <div class="banner fx-row">
-        <div class="fx-col-30-l banner-logo">
+        <div class="banner-logo">
             {{#if @blog.logo}}
                 <a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
             {{/if}}
@@ -11,7 +11,9 @@
             </h1>
             <p class="blogtitle-description"><a title="{{@blog.title}}" href='{{@blog.url}}'>{{@blog.description}}</a></p>
         </div>
-        <div class="fx-col-70-l banner-navigation">
+    </div>
+    <div class="fx-row">
+        <div class="fx-col-100-l banner-navigation back-bordeau">
             <nav>{{navigation}}</nav>
         </div>
     </div>

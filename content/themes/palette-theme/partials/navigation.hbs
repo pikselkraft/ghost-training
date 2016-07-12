@@ -1,6 +1,6 @@
 <!-- Default navigation template html -->
-<div class="my-fancy-nav-wrapper">
-    <ul class="nav">
+<div class="nav">
+    <ul class="nav-list">
         <!-- Loop through the navigation items -->
         {{#foreach navigation}}
         <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
