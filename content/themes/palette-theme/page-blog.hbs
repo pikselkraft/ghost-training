@@ -3,7 +3,7 @@
 <main>
   <div class="fx-row fx-row-center-l">
     <div class="fx-col-80-l">
-    {{#get "posts" limit="3" include="author,tags"}}
+    {{#get "posts" limit="3" include="author,tags" filter="tag:blog"}}
     {{#foreach posts}}
         <article class="post {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
             <header class="post--header">
@@ -14,7 +14,7 @@
             {{#if image}}
                 <img src="{{image}}" alt="{{title}}">
             {{/if}}
-            <p class="author">Written by {{author}}</p>
+            <p class="author">Ecris par {{author}}</p>
             {{content}}
         </div>
         {{#if tags}}
