@@ -4,7 +4,6 @@
   <div class="fx-row fx-row-center-l">
     <div class="fx-col-80-l">
         {{#foreach posts}}
-        {{!-- UPDATE schema.org --}}
             {{#has tag="home"}}
             <article class="home {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
             <header class="home--postheader">
@@ -21,9 +20,13 @@
         {{/foreach}}
     </div>
   </div>
-  <div class="fx-row">
-    <div class="fx-col-100">
-
+  <div class="fx-row fx-row-center-l">
+    <div class="fx-col-80-l contact">
+        <h3 class="contact--title">Votre demande de personnalisée</h3>
+        <div class="fx-col-80-l">
+            {{!-- TODO align button and text inside the button --}}
+            <a class="contact--btn btn--transition btn--hover">Contactez-nous</a>
+        </div>
     </div>
   </div>
 </main>
