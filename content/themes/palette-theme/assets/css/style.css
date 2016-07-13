@@ -89,7 +89,7 @@ HEADER
 
 .banner--logo {
     display: block;
-    margin: 1rem auto 0rem auto;
+    margin: 1rem auto 0 auto;
 }
 
 .banner--navigation {
@@ -115,7 +115,7 @@ HEADER
 
 nav li {
     display: inline-block;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0 1rem 0 1rem;
 }
 
 nav a {
@@ -155,13 +155,14 @@ HOME
 
 .moto li {
     display: inline-block;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0 1rem 0 1rem;
     padding: 1rem;
     border: 2px solid #664147;
     border-radius: 10px;
 }
 
 .contact {
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -192,12 +193,11 @@ HOME
  }
 
  .contact--btn:hover {
-    color: #40C9A2;
-    outline: 0;
+    color: white;
 }
 
  .contact--btn:focus {
-    color: #9C8D8A;
+    color: #40C9A2;
     outline: 0;
 }
 
@@ -206,15 +206,11 @@ HOME
 }
 
 .btn--hover:hover {
-  box-shadow: 0 0 40px 40px #9C8D8A inset;
+  box-shadow: 0 0 40px 40px #40C9A2 inset;
 }
 /********
 CONTENT
 ********/
-
-main {
-
-}
 
 /********
 TEAM
