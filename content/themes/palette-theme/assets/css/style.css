@@ -27,6 +27,31 @@ Link
 Font-Family: Lato, Font-Weight: regular, Font-Size: 14, Color: #40C9A2
 ************/
 
+/* MEDIA QUERIES MODEL
+@media only screen and (max-width:40em) {
+    .menu-responsive ul li a {
+    font-size: 1rem;
+    padding: 40px;
+}
+}@media only screen and (min-width:40.063em) and (max-width:64em) {
+    .menu-responsive ul li a {
+    font-size: 0.8rem;
+    text-align: right;
+}
+}@media only screen and (min-width:64.063em) and (max-width:90em) {
+    .menu-responsive ul li a {
+    font-size: 1rem;
+    text-align: right;
+}
+}
+@media only screen and (min-width:90.063em) {
+    .menu-responsive ul li a {
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+*/
+
 /********
 GLOBAL
 ********/
@@ -59,6 +84,7 @@ body {
 
 h1 {
     font-family: "Courgette";
+    font-size: 2.25rem;
     color: #664147;
 }
 
@@ -66,7 +92,13 @@ h1 a {
     color: #664147;
 }
 
-h2, h3, h4 {
+h2 {
+    font-family: "Courgette";
+    font-size: 1.6rem;
+    color: #664147;
+}
+
+h3, h4 {
     font-family: "Courgette";
     color: #664147;
 }
@@ -149,7 +181,7 @@ HOME
 }
 
 .moto {
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -161,13 +193,65 @@ HOME
     border-radius: 10px;
 }
 
+.content--desc {
+    border-bottom: 0.2rem #E5F9E0 solid;
+}
+
+.content--title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+    .content--title {
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (min-width:64.063em) {
+    .content--title {
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width:90.063em) {
+    .content--title {
+        margin-left: 8rem;
+    }
+}
+
+.content--desc p {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (min-width:40.063em) {
+    .content--desc p {
+        text-align: justify;
+    }
+}
+
+.home--postcontent h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
 .contact {
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.contact--content {
     text-align: center;
 }
 
+.contact--title {
+    margin-bottom: 3rem;
+}
+
 .contact--btn {
-    width: 20rem;
+    margin: auto 0;
     box-sizing: border-box;
     appearance: none;
     background-color: transparent;
@@ -175,17 +259,13 @@ HOME
     border-radius: 0.6em;
     color: #40C9A2;
     cursor: pointer;
-    display: flex;
     align-self: center;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1;
-    margin: 20px;
     padding: 1.2em 2.8em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
  }
 
  .contact--btn {
