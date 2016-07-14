@@ -234,8 +234,14 @@ HOME
 
 .home--postcontent h3 {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-decoration: underline;
+}
+
+.product--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .contact {
