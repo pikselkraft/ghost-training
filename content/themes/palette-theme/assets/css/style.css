@@ -244,8 +244,12 @@ HOME
     align-items: center;
 }
 
+/********
+CONTACT
+********/
+
 .contact {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .contact--content {
@@ -254,6 +258,8 @@ HOME
 
 .contact--title {
     margin-bottom: 3rem;
+    font-size: 1.8rem;
+    text-decoration: underline;
 }
 
 .contact--btn {
@@ -294,9 +300,6 @@ HOME
 .btn--hover:hover {
   box-shadow: 0 0 40px 40px #40C9A2 inset;
 }
-/********
-CONTENT
-********/
 
 /********
 TEAM
@@ -311,7 +314,8 @@ FOOTER
 ********/
 
 .footer--container {
-    height: 6rem;
+    min-height: 8rem;
+    overflow: hidden;
     background-color: #9C8D8A;
 }
 

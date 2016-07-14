@@ -1,7 +1,7 @@
 {{!< default}}
 {{> header}}
 <main class="home">
-  <div class="fx-row fx-row-center-l">
+    <div class="fx-row fx-row-center-l">
     <div class="fx-col-80-l">
         {{#foreach posts}}
             {{#has tag="home"}}
@@ -19,12 +19,7 @@
           {{/has}}
         {{/foreach}}
     </div>
-  </div>
-  <div class="fx-row fx-row-center-l contact">
-    <div class="fx-col-80-l contact--content">
-        <h3 class="contact--title">Votre demande de devis personnalisée</h3>
-        <a href="http://localhost:2368/contact/" class="contact--btn btn--transition btn--hover">Contactez-nous</a>
     </div>
-  </div>
+    {{> contact}}
 </main>
 {{> footer}}
