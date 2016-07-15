@@ -287,6 +287,16 @@ PRODUCTS
 ********/
 
 /********
+MENTIONS
+********/
+
+.mentions {
+    margin: 3rem 0 3rem 0;
+    padding: 1rem;
+    border-left: 1px #664147 solid;
+}
+
+/********
 FOOTER CONTACT
 ********/
 
