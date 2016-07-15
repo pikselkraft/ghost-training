@@ -130,22 +130,30 @@ HEADER
     text-align: center;
 }
 
-/* TODO update logo (right size) and add hidden title for seo purpose  !! */
 .logo img {
-    position: relative;
-    width: 10rem;
-    height: 10rem;
+    display: none;
 }
 
 .blogtitle {
   display: none;
 }
 
+.blogtitle a {
+  text-decoration: none;
+}
+
 .blogtitle--description {
     display: none;
 }
 
-/* TODO responsive menu + icon responsive (MENU) */
+@media only screen and (min-width:64.063em) {
+    .logo img {
+        display: inline;
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+    }
+}
 
 nav li {
     display: inline-block;
@@ -168,7 +176,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* TODO style of the menu */
+@media only screen and (max-width:40em) {
+    nav li {
+        width: 15rem;
+        padding: 0.2rem;
+        text-decoration: underline;
+    }
+}
 
 /********
 HOME
@@ -219,7 +233,7 @@ HOME
         font-size: 2rem;
     }
 }
-@media only screen and (min-width:90.063em) {
+@media only screen and (min-width:64.063em) and (max-width:90.063em) {
     .content--title {
         margin-left: 8rem;
     }
@@ -257,6 +271,13 @@ PAGE CONTACT
     margin: 4rem 0 2rem 0;
     text-align: center;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width:64em) {
+    .pcontact--title {
+        text-align: left;
+    }
 }
 
 .typeform {
@@ -365,13 +386,18 @@ MENTIONS
 FOOTER CONTACT
 ********/
 
-.contact {
-    margin-bottom: 5rem;
+.contact--first {
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.contact--second {
+    margin-bottom: 6rem;
     text-align: center;
 }
 
 .contact--title {
-    margin-bottom: 3rem;
+    margin: 4rem 0 1rem 0;
     font-size: 1.8rem;
     text-decoration: underline;
 }
@@ -386,16 +412,13 @@ FOOTER CONTACT
     color: #40C9A2;
     cursor: pointer;
     align-self: center;
+    text-align: center;
     font-size: 1rem;
     line-height: 1;
     padding: 1.2em 2.8em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
- }
-
- .contact--btn {
-    text-align: center;
  }
 
  .contact--btn:hover {
@@ -413,6 +436,20 @@ FOOTER CONTACT
 
 .btn--hover:hover {
   box-shadow: 0 0 40px 40px #40C9A2 inset;
+}
+
+@media only screen and (max-width:40em) {
+    .contact--second {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    .contact--title {
+        margin: 3rem 0 0.5rem 0;
+    }
+    .contact--button {
+        display: block;
+        margin-top: 4rem;
+    }
 }
 
 .contact--etsy {
