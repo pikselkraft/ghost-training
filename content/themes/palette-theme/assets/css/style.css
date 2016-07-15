@@ -12,6 +12,8 @@ Light brown: #9C8D8A;
 Light green: #E5F9E0;
 Green:       #40C9A2;
 
+Etsy color:  #F56400
+
 FONTS
 -----
 Header
@@ -341,6 +343,24 @@ CONTACT
 /********
 TEAM
 ********/
+
+.equipe {
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+
+.equipe-desc p:last-child {
+    margin: 0 0 3rem 0;
+}
+
+.team--block {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.team--block ul {
+    list-style: none;
+}
 
 /********
 PRODUCTS
