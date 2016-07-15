@@ -408,6 +408,10 @@ FOOTER
     background-color: #9C8D8A;
 }
 
+.footer--container a {
+    color: white;
+}
+
 .footer--sub {
     position: relative;
     top: 1rem;
@@ -431,5 +435,5 @@ FOOTER
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    color: #40C9A2;
+    color: white;
 }
