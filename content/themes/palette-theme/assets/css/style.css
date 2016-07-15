@@ -247,7 +247,47 @@ HOME
 }
 
 /********
-CONTACT
+PAGE CONTACT
+********/
+
+.pcontact--title {
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.typeform {
+    margin: 0 0 3rem 0;
+}
+
+/********
+TEAM
+********/
+
+.equipe {
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+
+.equipe-desc p:last-child {
+    margin: 0 0 3rem 0;
+}
+
+.team--block {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.team--block ul {
+    list-style: none;
+}
+
+/********
+PRODUCTS
+********/
+
+/********
+FOOTER CONTACT
 ********/
 
 .contact {
@@ -341,32 +381,6 @@ CONTACT
 }
 
 /********
-TEAM
-********/
-
-.equipe {
-    text-align: center;
-    margin: 4rem 0 0 0;
-}
-
-.equipe-desc p:last-child {
-    margin: 0 0 3rem 0;
-}
-
-.team--block {
-    text-align: center;
-    margin: 2rem 0 2rem 0;
-}
-
-.team--block ul {
-    list-style: none;
-}
-
-/********
-PRODUCTS
-********/
-
-/********
 FOOTER
 ********/
 
@@ -401,11 +415,3 @@ FOOTER
     fill: currentColor;
     color: #40C9A2;
 }
-
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-    font-size: 32px;
-    color: red;
-}
-========================================== */
