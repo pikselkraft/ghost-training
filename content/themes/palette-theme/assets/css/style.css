@@ -286,8 +286,24 @@ TEAM
 }
 
 /********
-PRODUCTS
+CREATION
 ********/
+
+.creations--title {
+    margin: 3rem 0 0 0;
+    text-align: center;
+}
+
+.creations {
+    border-bottom: 0.1rem #664147 solid;
+}
+
+.creations--img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+}
 
 /********
 BLOG
@@ -442,6 +458,49 @@ FOOTER CONTACT
 /********
 FOOTER
 ********/
+
+/*** Mailchimp form
+
+.footer--mailchimp {
+    min-height: 4rem;
+    overflow: hidden;
+    background-color: #9C8D8A;
+    text-align: center;
+}
+
+@media only screen and (max-width:70em) {
+    .footer--mailchimp {
+        display: none;
+    }
+}
+
+.mailchimp--label {
+    margin: 0 0 1rem 0;
+}
+
+.mailchimp--input {
+    margin: 1rem 0 0 0;
+}
+
+.mailchimp--button {
+    margin: 1rem 0 2rem 0;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #40C9A2;
+    border-radius: 0.6em;
+    color: #40C9A2;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+***/
 
 .footer--container {
     min-height: 8rem;
