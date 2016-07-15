@@ -327,6 +327,13 @@ BLOG
 .sharepost a {
     padding: 0.2rem;
 }
+
+@media only screen and (max-width:64em) {
+    .post, .article {
+        padding: 1.5rem;
+    }
+}
+
 /********
 MENTIONS
 ********/
