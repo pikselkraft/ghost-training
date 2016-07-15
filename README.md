@@ -1,5 +1,25 @@
 # Ghost training notes
 
+This repo is a training for a school project. I will be a boilerplate for theme development using Ghost CMS. Another will be create when the boilerplate for the theme is ready (link is coming).
+
+## Stack
+* Ghost CMS
+* FOX CSS
+* Vanilla CSS
+
+## Futur Improvment
+* NPM script
+* Post CSS with CSSnext
+* ARIA integration
+* Gutemberg.js integration
+* Improve image managment
+* Improve Font loading
+
+## Installation
+
+The repo is based on the Ghost CMS zip, follow the quickstart installation.
+It's better to use NVM to use the right version of Node.js.
+
 # Ghost installation
 
 <a href="https://github.com/TryGhost/Ghost"><img src="https://cloud.githubusercontent.com/assets/120485/6622822/c4c639fe-c8e7-11e4-9e64-5bec06c8b4c3.png" alt="Ghost" /></a>
