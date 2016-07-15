@@ -295,6 +295,44 @@ PRODUCTS
 ********/
 
 /********
+BLOG
+********/
+
+.blog--title {
+    margin: 4rem 0 2rem 0;
+    padding: 1rem;
+    color: white;
+}
+
+.post {
+    margin-bottom: 3rem;
+    border-bottom: 2px #664147 solid;
+}
+
+.post--tag {
+    margin-bottom: 1rem;
+}
+
+.pagination {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.pagination a {
+    color: #664147;
+}
+
+/*** POST ***/
+
+.article {
+    margin: 3rem 0 0 0;
+    border-top: 2px #664147 solid;
+}
+
+.sharepost a {
+    padding: 0.2rem;
+}
+/********
 MENTIONS
 ********/
 

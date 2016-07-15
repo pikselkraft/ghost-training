@@ -1,8 +1,9 @@
 {{!< default}}
 {{> header}}
 <main>
-  <div class="fx-row fx-row-center-l">
+  <div class="fx-row fx-row-center-l blog">
     <div class="fx-col-80-l">
+    <h1 class="blog--title back-bordeau">Notre blog DIY et palettes</h1>
     {{#get "posts" limit="3" include="author,tags" filter="tag:blog"}}
     {{#foreach posts}}
         <article class="post {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
@@ -17,14 +18,16 @@
             <p class="author">Ecris par {{author}}</p>
             {{content}}
         </div>
+        <div class="post--tag">
         {{#if tags}}
             <div class="tags">
             Tags: {{tags separator=" | "}}
             </div>
         {{/if}}
+        </div>
         </article>
     {{/foreach}}
-    <div class="fx-row fx-row-center-l">
+    <div class="fx-row fx-row-center-l pagination">
       <div class="fx-col-80-l">
             {{#if pagination}}
                 <div class="pagination">
